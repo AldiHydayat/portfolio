@@ -78,7 +78,7 @@ function Home(props) {
           <h1 className="m-8 mt-2 font-roboto text-semibold text-5xl text-white">Asep Aldi Hidayat</h1>
           <p className="m-8 mt-2 font-inter text-semibold text-md text-2xl text-white">Web Developer | Back End Developer</p>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0 left-0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0 left-0 z-0">
           <path
             fill="#fbbf24"
             fillOpacity="1"
@@ -86,12 +86,19 @@ function Home(props) {
           ></path>
         </svg>
       </div>
-      <div id="about-me" className="pt-20 min-h-screen bg-yellow-400">
+      <div id="about-me" className="pt-20 min-h-screen bg-yellow-400 relative">
         <div className="container mx-auto w-full">
           <h1 className="text-center font-roboto text-4xl border-b-2 border-blue-900">About Me</h1>
-          <div className="flex px-10 md:flex-row flex-col items-center justify-between">
-            <img src={process.env.PUBLIC_URL + 'biru.png'} alt="My Photo" className="md:w-3/12 w-6/12 justify-self-auto mx-auto mt-8 shadow-2xl rounded-full my-2" data-aos="zoom-in" data-aos-once={true} data-aos-duration="1000" />
-            <div className="w-8/12 font-inter" data-aos="fade-left" data-aos-once={true} data-aos-duration="1000">
+          <div className="flex px-10 sm:flex-row flex-col items-center justify-between">
+            <img
+              src={process.env.PUBLIC_URL + 'biru.png'}
+              alt="My Photo"
+              className="sm:w-4/12 w-6/12 justify-self-auto mx-auto mt-8 shadow-2xl rounded-full my-2 relative z-10"
+              data-aos="zoom-in"
+              data-aos-once={true}
+              data-aos-duration="1000"
+            />
+            <div className="w-6/12 font-inter relative z-10" data-aos="fade-left" data-aos-once={true} data-aos-duration="1000">
               <p>
                 I'm just graduated as <b>Software Engineer</b> at high school. I'm passionate on <b>Web Development</b> especially on server side and a fast learner at programming.
               </p>
@@ -99,7 +106,7 @@ function Home(props) {
             </div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0 left-0 z-0">
           <path
             fill="#2563eb"
             fill-opacity="1"
@@ -111,27 +118,27 @@ function Home(props) {
         <div className="container mx-auto">
           <h1 className="text-center font-roboto text-4xl border-b-2 border-blue-400">Skills</h1>
           <div className="flex mt-4 justify-center flex-wrap" data-aos="zoom-in" data-aos-once={true} data-aos-duration="1000">
-            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 hover:shadow-2xl transition duration-150 m-4">
+            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 transition duration-150 m-4">
               <FontAwesomeIcon icon={faHtml5} style={{ color: 'orange' }} size="4x" />
               <p className="text-roboto text-blue-700 text-xl font-semibold">HTML</p>
               <p className="font-inter text-center text-black">Advance</p>
             </div>
-            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 hover:shadow-2xl transition duration-150 m-4">
+            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 transition duration-150 m-4">
               <FontAwesomeIcon icon={faCss3Alt} style={{ color: 'blue' }} size="4x" />
               <p className="text-roboto text-blue-700 text-xl font-semibold">CSS</p>
               <p className="font-inter text-center text-black">Intermediate</p>
             </div>
-            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 hover:shadow-2xl transition duration-150 m-4">
+            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 transition duration-150 m-4">
               <FontAwesomeIcon icon={faPhp} style={{ color: 'purple' }} size="4x" />
               <p className="text-roboto text-blue-700 text-xl font-semibold">PHP</p>
               <p className="font-inter text-center text-black">Intermediate</p>
             </div>
-            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 hover:shadow-2xl transition duration-150 m-4">
+            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 transition duration-150 m-4">
               <FontAwesomeIcon icon={faJsSquare} style={{ color: 'yellow' }} size="4x" />
               <p className="text-roboto text-blue-700 text-xl font-semibold">Javascript</p>
               <p className="font-inter text-center text-black">Intermediate</p>
             </div>
-            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 hover:shadow-2xl transition duration-150 m-4">
+            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 transition duration-150 m-4">
               <svg width="63px" viewBox="-24 0 304 304" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
                 <path
                   d="M13.104 287.306c-5.204 0-6.717-3.03-6.717-7.57 0-1.513.19-3.22.424-5.018 1.14-7.851 3.923-12.343 10.64-12.343 4.543 0 6.758 2.032 6.758 5.722v1.799h4.507c.05 0 .05-1.656.05-2.033 0-5.392-3.265-10.506-11.308-10.506-10.929 0-15.423 5.937-17.079 17.576-.237 1.562-.379 3.02-.379 4.576 0 6.86 2.699 13.1 12.349 13.1 7.332 0 11.687-3.575 14.24-7.975l-4.306-2.9c-2.79 4.401-5.82 5.572-9.179 5.572zm29.57-21.668c-8.754 0-12.536 4.492-13.813 13.432a23.325 23.325 0 0 0-.24 3.124c0 5.77 2.697 10.362 10.17 10.362 8.754 0 12.587-4.685 13.864-13.486.142-1.134.237-2.175.237-3.215.002-5.865-2.788-10.217-10.218-10.217zm3.643 13.435c-.947 6.483-2.979 8.47-6.814 8.47-3.073 0-4.586-1.278-4.586-5.11 0-.947.096-2.081.284-3.36.947-6.433 2.839-8.42 6.718-8.42 3.123 0 4.682 1.277 4.682 5.156 0 .946-.096 2.035-.284 3.264zm28.58-21.246l-1.465 8.685c-.094.755-.046.504.24 1.214-1.372-1.04-3.834-1.728-5.49-1.728-7.854 0-12.252 3.555-13.67 13.49a19.414 19.414 0 0 0-.237 3.171c0 7.241 4.257 9.94 9.98 9.94 2.416 0 4.78.05 6.623-1.509l.471 2.943h4.543l5.298-36.206h-6.293zm-4.494 28.342c-2.127 1.274-4.207 1.562-5.484 1.562-3.454 0-4.4-1.799-4.4-4.683 0-1.089.142-2.363.333-3.739 1.086-7.521 3.5-8.848 6.623-8.848 2.032 0 3.592.333 5.062 1.139l-2.134 14.569zm24.603-20.531c-8.66 0-12.725 4.113-14.099 13.432-.144 1.137-.239 2.226-.239 3.266 0 6.387 3.266 10.22 10.454 10.22 5.583 0 9.75-2.32 11.972-6.578l-4.779-1.94c-1.37 2.08-3.215 3.5-6.48 3.5-3.5 0-4.92-.942-4.92-4.065 0-.616.048-1.511.143-1.511h17.076c.24-2.414.52-4.12.52-5.535 0-4.728-1.796-10.79-9.648-10.79zm3.263 11.499H87.861c1.043-2.414 2.79-6.15 6.387-6.15 2.79 0 4.164 1.631 4.164 4.422-.003.473-.046 1.728-.143 1.728zm24.591-12.069l.567-4.827h-13.343l-.565 4.827h3.5l-3.782 24.137h-3.505l-.564 4.828h13.34l.57-4.828h-3.503l3.783-24.137h3.502zm27.11 7.241l1.705-4.827h-4.589l-3.309.683c-1.846-1.18-4.354-2.066-6.717-2.066-6.768 0-12.537 3.268-12.537 10.697 0 2.084.756 3.766 1.653 4.903-1.416.755-2.647 2.02-2.647 3.726 0 .756.282 1.53.852 2.238-2.841 1.706-4.586 4.533-4.586 7.842 0 6.39 6.669 7.753 11.778 7.753 6.433 0 14.099-1.47 14.099-9.655 0-2.79-1.75-4.97-6.812-5.916l-9.13-1.706c-1.04-.191-1.277-.522-1.277-.995 0-.71.43-1.086 1.136-1.086l.616.094c1.23.283 2.65.427 4.115.427 6.578 0 12.443-2.84 12.443-10.22 0-1.042-.188-1.747-.661-2.884.803.38 1.846.995 2.268.995h1.6v-.003zm-13.007 19.583c1.796.333 2.41.994 2.41 2.177 0 3.833-4.116 4.306-7.095 4.306-4.542 0-6.244-1.086-6.244-3.502 0-2.13.613-3.121 2.035-4.637l8.894 1.656zM135.02 279.5c-2.744 0-4.258-.992-4.258-3.36 0-3.5 2.035-5.535 5.583-5.535 2.839 0 4.212 1.183 4.212 3.498 0 3.502-1.989 5.397-5.537 5.397zm31.757-13.862c-2.65 0-5.013 1.3-7.948 3.616l-.425-1.772h-5.206l-3.642 26.55h6.292l2.745-20.134c1.846-1.135 4.115-2.783 6.055-2.783 2.364 0 3.218 1.141 3.218 3.316 0 .521-.05 2.064-.145 2.631l-2.315 16.97h6.293l2.315-17.108c.096-.8.19-2.119.19-2.874.003-4.5-2.129-8.412-7.427-8.412zm19.38 21.743l.048-.65 2.742-19.249h-10.456l-.659 4.827h4.586c-.379 0-.615.423-.661.804l-1.893 12.82c-.094.617-.14 1.901-.14 2.418 0 3.311 1.796 5.682 5.484 5.682h3.218l.71-4.828h-2.033c-.712 0-.946-1.257-.946-1.824zm4.067-29.554h-6.15c-.379 0-.379-1.393-.425-.92l-.854 6.802c-.049.428-.049 1.36.33 1.36h6.153c.379 0 .379-1.654.425-2.084l.854-5.25c.048-.473.048.092-.333.092zm12.831 29.715c-1.559 0-2.317-.663-2.317-2.08l.048-.097 1.987-13.056h7.19l2.175-4.827h-8.704l1.465-10.623-6.62 2.117-1.185 8.506h-3.831l-.661 4.827h4.446c-.425 2.414-.852.848-.898 1.323l-1.704 11.448c-.094.522-.094.9-.094 1.371 0 4.495 3.311 6.177 7.289 6.177 3.688 0 6.669-1.077 8.989-3.02l-2.935-3.61c-1.47.897-2.462 1.544-4.64 1.544zm23.087-21.904c-8.657 0-12.725 4.113-14.098 13.432-.142 1.137-.237 2.226-.237 3.266 0 6.387 3.264 10.22 10.454 10.22 5.583 0 9.75-2.32 11.97-6.578l-4.777-1.94c-1.37 2.08-3.217 3.5-6.483 3.5-3.498 0-4.92-.942-4.92-4.065 0-.616.051-1.511.146-1.511h17.077c.236-2.414.52-4.12.52-5.535 0-4.728-1.797-10.79-9.652-10.79zm3.266 11.499H219c1.04-2.414 2.788-6.15 6.387-6.15 2.79 0 4.164 1.631 4.164 4.422-.003.473-.049 1.728-.143 1.728zm23.797-11.5c-2.271 0-4.4 1.302-6.53 3.332l-.378-1.487h-5.202l-3.644 26.55h6.34l2.79-20.56c1.657-.991 3.549-1.838 5.347-1.838 1.137 0 2.223-.181 3.263-.04l.809-5.485c-.951-.189-1.897-.471-2.795-.471zM92.54 238.81c-14.32-6.19-27.72-21.922-27.752-38.019-.039-17.55 11.083-32.45 24.916-42.242-1.663 6.283-2.57 12.03 1.55 17.65 3.83 5.225 10.538 7.764 16.872 6.386 14.8-3.24 15.479-19.51 6.705-28.989-8.675-9.387-17.067-19.99-13.765-33.603 1.653-6.824 5.843-13.216 11.151-17.785-4.08 10.722 7.514 21.296 15.153 26.563 13.251 9.138 27.79 16.044 39.974 26.756 12.816 11.258 22.28 26.48 20.369 44.135-2.071 19.136-17.277 32.445-34.333 39.164 36.042-7.955 73.283-35.928 74.046-75.9.632-32.885-21.927-58.193-49.872-72.682l-1.46-.797c.767 1.861 1.018 3.444.989 4.861.25-1.045.42-2.119.468-3.227a15.728 15.728 0 0 1-.512 3.9l.044-.673a16.383 16.383 0 0 1-2.069 4.931l.41-.441c-5.575 9.247-20.668 11.255-28.124 1.68-11.986-15.402.251-32.008 1.963-48.318 2.143-20.441-10.676-40.285-26.57-52.16 8.754 14.161-2.779 32.896-12.006 43.37C101.74 53.523 90.859 62 80.982 71.225c-10.61 9.908-20.81 20.345-29.531 31.974-17.442 23.276-28.12 52.55-20.273 81.588 7.842 29.018 32.978 47.49 61.363 54.022z"
@@ -141,27 +148,39 @@ function Home(props) {
               <p className="text-roboto text-blue-700 text-xl font-semibold">Codeigniter</p>
               <p className="font-inter text-center text-black">Intermediate</p>
             </div>
-            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 hover:shadow-2xl transition duration-150 m-4">
+            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 transition duration-150 m-4">
               <FontAwesomeIcon icon={faBootstrap} style={{ color: 'blue' }} size="4x" />
               <p className="text-roboto text-blue-700 text-xl font-semibold">Bootstrap</p>
               <p className="font-inter text-center text-black">intermediate</p>
             </div>
-            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 hover:shadow-2xl transition duration-150 m-4">
+            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 transition duration-150 m-4">
               <FontAwesomeIcon icon={faNodeJs} style={{ color: 'green' }} size="4x" />
               <p className="text-roboto text-blue-700 text-xl font-semibold">Express</p>
               <p className="font-inter text-center text-black">Intermediate</p>
             </div>
-            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 hover:shadow-2xl transition duration-150 m-4">
+            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 transition duration-150 m-4">
               <FontAwesomeIcon icon={faReact} style={{ color: 'blue' }} size="4x" />
               <p className="text-roboto text-blue-700 text-xl font-semibold">React</p>
               <p className="font-inter text-center text-black">Basic</p>
             </div>
-            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 hover:shadow-2xl transition duration-150 m-4">
-              <FontAwesomeIcon icon={faBootstrap} style={{ color: 'blue' }} size="4x" />
+            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 transition duration-150 m-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63">
+                <defs>
+                  <linearGradient x1="0" y1="-21.333" y2="85.333" id="A" x2="64" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#2383ae" offset="0%" />
+                    <stop stop-color="#6dd7b9" offset="100%" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M16 25.6c2.133-8.533 7.467-12.8 16-12.8 12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8C61.867 27.733 56.533 32 48 32c-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8zM0 44.8C2.133 36.267 7.467 32 16 32c12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8-2.133 8.533-7.467 12.8-16 12.8-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8z"
+                  fill="url(#A)"
+                  fill-rule="evenodd"
+                />
+              </svg>
               <p className="text-roboto text-blue-700 text-xl font-semibold">Tailwind CSS</p>
               <p className="font-inter text-center text-black">Basic</p>
             </div>
-            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 hover:shadow-2xl transition duration-150 m-4">
+            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 transition duration-150 m-4">
               <svg width="62px" viewBox="-18.458 -22.75 191.151 191.151" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-18.458 6.58h191.151v132.49H-18.458V6.58z" fill="none" />
                 <path
@@ -181,7 +200,7 @@ function Home(props) {
               <p className="text-roboto text-blue-700 text-xl font-semibold">MySQL</p>
               <p className="font-inter text-center text-black">Intermediate</p>
             </div>
-            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 hover:shadow-2xl transition duration-150 m-4">
+            <div className="flex flex-col bg-white md:h-2/6  md:w-2/12 h-4/12 w-5/12 py-2 items-center rounded-b-2xl rounded-tr-2xl border border-blue-900 transition duration-150 m-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="120" height="55">
                 <path
                   d="M16.147 5.154l1.09 2.05a6.15 6.15 0 0 0 .824 1.024c.913.913 1.782 1.87 2.56 2.895 1.848 2.427 3.095 5.122 3.986 8.04.534 1.782.824 3.608.846 5.456.09 5.523-1.804 10.266-5.634 14.208a16.3 16.3 0 0 1-2.004 1.715c-.38 0-.557-.3-.713-.557-.3-.5-.468-1.047-.557-1.603-.134-.668-.223-1.336-.178-2.027v-.312c-.022-.067-.356-30.732-.223-30.888z"
@@ -223,11 +242,11 @@ function Home(props) {
           ></path>
         </svg>
       </div>
-      <div id="project" className="pt-20 min-h-screen bg-blue-400 text-white">
-        <div className="container mx-auto">
+      <div id="project" className="pt-20 min-h-screen bg-blue-400 text-white relative">
+        <div className="container mx-auto relative z-10">
           <h1 className="text-center font-roboto text-4xl border-b-2 border-blue-900">My Project</h1>
-          <div className="flex justify-around mt-6 md:flex-row flex-col" id="list-project">
-            <div id="card" className="flex md:w-4/12 w-10/12 flex-col mx-auto my-5" data-aos="zoom-out" data-aos-once={true} data-aos-duration="1000">
+          <div className="flex justify-around mt-6 lg:flex-row flex-wrap flex-col " id="list-project">
+            <div id="card" className="flex sm:w-8/12 lg:w-4/12 w-10/12 flex-col mx-auto my-5" data-aos="zoom-out" data-aos-once={true} data-aos-duration="1000">
               <div className="relative">
                 <a
                   href="https://niaga-11.000webhostapp.com/"
@@ -243,13 +262,13 @@ function Home(props) {
               </div>
               <p className="font-roboto text-2xl mt-3">Niaga 11</p>
               <p className="font-inter text-md">Marketplace</p>
-              <div className="flex mt-1">
+              <div className="flex items-center mt-1">
                 <span className="font-inter text-sm bg-red-400 px-3 py-1 rounded-xl text-white mr-2">Codeigniter</span>
                 <span className="font-inter text-sm bg-yellow-400 px-3 py-1 rounded-xl text-white mx-2">MySQL</span>
                 <span className="font-inter text-sm bg-blue-700 px-3 py-1 rounded-xl text-white mx-2">Bootstrap</span>
               </div>
             </div>
-            <div id="card" className="flex md:w-4/12 w-10/12 flex-col mx-auto my-5" data-aos="zoom-out" data-aos-once={true} data-aos-duration="1000">
+            <div id="card" className="flex sm:w-8/12 lg:w-4/12 w-10/12 flex-col mx-auto my-5" data-aos="zoom-out" data-aos-once={true} data-aos-duration="1000">
               <div className="relative">
                 <a
                   href="http://perpustakaan-ku.herokuapp.com/"
@@ -265,7 +284,7 @@ function Home(props) {
               </div>
               <p className="font-roboto text-2xl mt-3">Perpus</p>
               <p className="font-inter text-md">Management Data</p>
-              <div className="flex mt-1">
+              <div className="flex items-center mt-1">
                 <span className="font-inter text-sm bg-green-400 px-3 py-1 rounded-xl text-white mr-2">Express</span>
                 <span className="font-inter text-sm bg-green-600 px-3 py-1 rounded-xl text-white mx-2">MongoDB</span>
                 <span className="font-inter text-sm bg-blue-700 px-3 py-1 rounded-xl text-white mx-2">React</span>
@@ -274,40 +293,40 @@ function Home(props) {
             </div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0 left-0 z-0">
           <path
-            fill="#ffffff"
+            fill="#1e3a8a"
             fill-opacity="1"
             d="M0,192L48,197.3C96,203,192,213,288,186.7C384,160,480,96,576,101.3C672,107,768,181,864,176C960,171,1056,85,1152,53.3C1248,21,1344,43,1392,53.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
         </svg>
       </div>
-      <div id="contact" className="pt-20 min-h-screen text-blue-700 relative">
+      <div id="contact" className="pt-20 min-h-screen relative bg-blue-900">
         <div className="container mx-auto">
-          <h1 className="text-center font-roboto text-4xl border-b-2 border-blue-400">Contact</h1>
-          <h1 className="text-center font-inter text-2xl mt-2">Get In Touch</h1>
+          <h1 className="text-center font-roboto text-4xl border-b-2 border-blue-400 text-white">Contact</h1>
+          <h1 className="text-center font-inter text-2xl mt-2 text-gray-200">Get In Touch</h1>
           <div id="contact-list" className="flex justify-around items-center md:flex-row flex-col flex-col mt-3 relative z-10">
-            <div className="flex flex-col items-center md:mx-1 my-2 p-2 border shadow-xl bg-white rounded-lg md:w-2/12 w-6/12">
+            <div className="flex flex-col text-blue-700 items-center md:mx-1 my-2 p-2 border shadow-xl bg-white rounded-lg md:w-4/12 sm:w-4/12 w-6/12">
               <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#5af745' }} size="4x" />
               <p className="font-inter text-xl">0895-4147-47753</p>
             </div>
-            <div className="flex flex-col items-center md:mx-1 my-2 border shadow-xl bg-white rounded-lg md:w-2/12 w-6/12 p-2">
+            <div className="flex flex-col text-blue-700 items-center md:mx-1 my-2 border shadow-xl bg-white rounded-lg md:w-4/12 sm:w-4/12 w-6/12 p-2">
               <FontAwesomeIcon icon={faEnvelope} style={{ color: '#f56e69' }} size="4x" />
               <p className="font-inter text-xl">aldyh128@gmail.com</p>
             </div>
-            <div className="flex flex-col items-center md:mx-1 my-2 border shadow-xl bg-white rounded-lg md:w-2/12 w-6/12 p-2">
+            <div className="flex flex-col text-blue-700 items-center md:mx-1 my-2 border shadow-xl bg-white rounded-lg md:w-4/12 sm:w-4/12 w-6/12 p-2">
               <FontAwesomeIcon icon={faSearchLocation} style={{ color: '#364ff5' }} size="4x" />
               <p className="font-inter text-xl">Cimahi, Jawa Barat</p>
             </div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0 left-0 z-0">
+        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0 left-0 z-0">
           <path
             fill="#1e3a8a"
             fillOpacity="1"
             d="M0,192L48,186.7C96,181,192,171,288,176C384,181,480,203,576,181.3C672,160,768,96,864,90.7C960,85,1056,139,1152,176C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
-        </svg>
+        </svg> */}
       </div>
       <div className="h-4/6 bg-blue-900 text-white py-6" id="footer">
         <div className="container mx-auto flex flex-col">
