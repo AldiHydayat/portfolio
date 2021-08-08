@@ -72,7 +72,7 @@ function Home(props) {
           </div>
         </nav>
       </div>
-      <div id="home" className="pt-20 min-h-screen bg-blue-900">
+      <div id="home" className="pt-20 min-h-screen bg-blue-900 relative">
         <div className="container mx-auto" data-aos="fade-right" data-aos-once={true} data-aos-duration="600">
           {/* <img src={process.env.PUBLIC_URL + 'biru.png'} alt="My Photo" className="w-1/6 justify-self-auto mx-auto mt-8 shadow-2xl rounded-full" /> */}
           <h1 className="m-8 mt-2 font-roboto text-semibold text-5xl text-white">Asep Aldi Hidayat</h1>
